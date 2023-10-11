@@ -42,8 +42,9 @@ $ curl --silent --location -o /usr/local/bin/argocd https://github.com/argoproj/
 $ chmod +x /usr/local/bin/argocd
 $ kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "LoadBalancer"}}'
 $ kubectl get svc -n argocd
-$ kubectl get secret argocd-initial-admin-secret -n argocd -o yaml
-$ echo XXXXXXX | base64 --decode
+$ echo XXXXXXX(replace with the generated password from the previous command)  
+$ copy the dns name of argocd (from the command kubectl get svc -n argocd)
+$ login with username "admin" and the generated password from the cli using base 64 "BIBzwKejLTt9HU7Q"
 
 ================================================================== Add EKS Cluster to ArgoCD =================================================================
 $ argocd login a2255bb2bb33f438d9addf8840d294c5-785887595.ap-south-1.elb.amazonaws.com --username admin
