@@ -34,6 +34,8 @@ eksctl create cluster --name virtualtechbox-cluster \
 --node-type t2.small \
 --nodes 3 \
 
+# always become root to use kubectl commands
+
 ================================================================== ArgoCD Installation =================================================================
 $ kubectl create namespace argocd
 $ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
