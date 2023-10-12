@@ -52,3 +52,10 @@ $ argocd cluster list
 $ kubectl config get-contexts
 $ argocd cluster add i-08b9d0ff0409f48e7@virtualtechbox-cluster.ap-south-1.eksctl.io (name of your eks cluster) --name virtualtechbox-eks-cluster
 $ argocd cluster list
+
+--------
+Delete cluster
+
+$ aws eks list-clusters
+$ eksctl delete cluster --name your-cluster-name
+
