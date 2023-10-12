@@ -57,5 +57,5 @@ $ argocd cluster list
 Delete cluster
 
 $ aws eks list-clusters
-$ eksctl delete cluster --name your-cluster-name
+$ eksctl delete cluster --name virtualtechbox-cluster --region ca-central-1
 
